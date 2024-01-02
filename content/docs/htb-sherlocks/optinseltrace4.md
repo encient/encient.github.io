@@ -18,7 +18,7 @@ seo:
   noindex: false # false (default) or true
 ---
 Difficulty: Easy <br>
-Printer server PCAP analysis
+Description: Printer server PCAP analysis
 
 ## Scenario
 Printers are important in Santa’s workshops, but we haven’t really tried to secure them! The Grinch and his team of elite hackers may try and use this against us! Please investigate using the packet capture provided! The printer server IP Address is 192.168.68.128.

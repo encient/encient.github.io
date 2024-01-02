@@ -37,6 +37,11 @@
 [[main]]
   name = "Blog"
   url = "/blog/"
+  weight = 20
+
+[[main]]
+  name = "GitBook"
+  url = "https://encient.gitbook.io/ctf-writeups-and-notes/ctf-writeup/aboh-2023"
   weight = 30
 
 # [[social]]
