@@ -22,9 +22,6 @@ copyRight = "Copyright (c) 2024 Encient"
 [build.buildStats]
   enable = true
 
-[social]
-  twitter = "encient__"
-
 [outputs]
   home = ["HTML", "RSS", "searchIndex"]
   section = ["HTML", "RSS", "SITEMAP"]
@@ -52,7 +49,7 @@ rel  = "sitemap"
 [caches]
   [caches.getjson]
     dir = ":cacheDir/:project"
-    maxAge = "30m"
+    maxAge = -1 # "30m"
 
 [taxonomies]
   contributor = "contributors"
@@ -81,9 +78,16 @@ rel  = "sitemap"
     name = "date"
     weight = 10
 
+# [imaging]
+#   anchor = "Smart"
+#   bgColor = "#ffffff"
+#   hint = "photo"
+#   quality = 75
+#   resampleFilter = "Box"
+
 [imaging]
-  anchor = "Smart"
+  anchor = "Center"
   bgColor = "#ffffff"
   hint = "photo"
-  quality = 75
-  resampleFilter = "Box"
+  quality = 85
+  resampleFilter = "Lanczos"

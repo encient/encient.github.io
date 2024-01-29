@@ -4,7 +4,7 @@ description: "Step-by-step guide on building an Ubuntu profile for Volatility 2 
 summary: "Step-by-step guide on building an Ubuntu profile for Volatility 2 and fixing the errors."
 date: 2023-12-30T16:27:31+08:00
 lastmod: 2023-12-30T16:27:31+08:00
-draft: true
+draft: false
 weight: 50
 categories: ["Technical"]
 tags: ["forensics","volatility"]
