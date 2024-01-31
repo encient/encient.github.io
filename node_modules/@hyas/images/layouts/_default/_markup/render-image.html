@@ -1,28 +1,6 @@
-{{- /* Last modified: 2023-09-04T09:23:04-07:00 */}}
+{{- /* Based on https://www.veriphor.com/articles/link-and-image-render-hooks/#image-render-hook */}}
 
-{{- /*
-MIT License
-
-Copyright (c) 2023 Hyas
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
-*/}}
+{{- /* Last modified: 2023-12-09T16:29:48-08:00 */}}
 
 {{- /*
 Copyright 2023 Veriphor LLC
@@ -149,7 +127,7 @@ partial template, after the render hook has captured the resource.
     {{- /* Destination is a page resource. */}}
     {{- $r = . }}
   {{- else }}
-    {{- with (and (ne .Page.BundleType "leaf") (.Page.CurrentSection.Resources.Get (strings.TrimPrefix "./" $u.Path)) ) }}
+    {{- with (and (ne .Page.BundleType "leaf") (.Page.CurrentSection.Resources.Get (strings.TrimPrefix "./" $u.Path))) }}
       {{- /* Destination is a section resource, and current page is not a leaf bundle. */}}
       {{- $r = . }}
     {{- else }}
@@ -167,57 +145,28 @@ partial template, after the render hook has captured the resource.
   {{- end }}
 {{- end }}
 
-{{/* Normalize and convert to WebP. */}}
-{{- $n := site.Params.hyas_images.landscape.normalize | default "1600x900" }}
-{{- if gt $r.Height $r.Width }}
-  {{- $n = site.Params.hyas_images.portrait.normalize | default "900x1600" }}
-{{- end }}
-{{- $r = $r.Fill (print $n " webp") }}
-
-{{/* Generate LQIP. */}}
-{{- $l := site.Params.hyas_images.landscape.lqip | default "16x9" }}
-{{- if gt $r.Height $r.Width }}
-  {{- $l = site.Params.hyas_images.portrait.lqip | default "9x16" }}
-{{- end }}
-{{- $l = $r.Resize $l }}
-
-{{/* Get widths. */}}
-{{- $w := site.Params.hyas_images.landscape.widths | default "[480 640 800 1024]" }}
-{{- if gt $r.Height $r.Width }}
-  {{ $w = site.Params.hyas_images.portrait.widths | default "[480 640 800 1024]" }}
-{{- end }}
-
-{{/* Generate srcset. */}}
-{{- $set := slice }}
-{{- range $w }}
-  {{- $url := (printf "%dx" . | $r.Resize).RelPermalink }}
-  {{- $set = $set | append (printf "%s %dw" $url .) }}
-{{- end }}
-{{- $set = (delimit $set ", ") }}
-
 {{- /* Determine id attribute. */}}
 {{- $id := printf "h-rh-i-%d" .Ordinal }}
 {{- with .Attributes.id }}
   {{- $id = . }}
 {{- end }}
 
-{{- /* Initialize attributes. */}}
-{{- $attrs := merge .Attributes (dict "id" $id "alt" .PlainText "title" .Title "src" $l.String) }}
-
-{{- /* Merge attributes from resource. */}}
-{{- with $r }}
-  {{- $attrs = merge $attrs (dict "src" $l.RelPermalink "class" "img-fluid lazyload blur-up" "fetchpriority" "low") }}
-  {{- if not (eq .MediaType.SubType "svg") }}
-    {{- $attrs = merge $attrs (dict "height" (string .Height) "width" (string .Width) "data-sizes" "auto" "data-srcset" $set) }}
-  {{- end }}
+{{/* Convert to webp. */}}
+{{- if ne $r.MediaType.SubType "gif" }}
+  {{- $r = $r.Resize (printf "%dx%d webp" $r.Width $r.Height) }}
 {{- end }}
 
 {{- /* Render image element. */ -}}
 <img
-  {{- range $k, $v := $attrs }}
-    {{- if or $v (eq $k "alt") }}
-      {{- printf " %s=%q" $k $v | safeHTMLAttr }}
-    {{- end }}
-  {{- end -}}
->
+  src="{{ $r.RelPermalink }}"
+  width="{{ string $r.Width }}"
+  height="{{ string $r.Height }}"
+  decoding="{{ site.Params.hyas_images.defaults.decoding }}"
+  fetchpriority="{{ site.Params.hyas_images.defaults.fetchpriority }}"
+  loading="{{ site.Params.hyas_images.defaults.loading }}"
+  alt="{{ .PlainText }}"
+  {{- with .Title -}}title="{{ . }}"{{- end -}}
+  id="{{ $id }}"
+/>
+
 {{- /**/ -}}
