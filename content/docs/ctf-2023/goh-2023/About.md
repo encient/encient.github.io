@@ -23,5 +23,5 @@ seo:
 
 |Category|Difficulty|Challenge Name|
 |--------|----------|--------------|
-|Forensics|Medium|[The Realm of Eerie-Area](/docs/ctf-2023/goh-2023/the-realm-of-eerie-area/)|
-|Forensics|Hard|[Clone](/docs/ctf-2023/goh-2023/clone/)|
+|Forensics|[The Realm of Eerie-Area](/docs/ctf-2023/goh-2023/the-realm-of-eerie-area/)|
+|Forensics|[Clone](/docs/ctf-2023/goh-2023/clone/)|

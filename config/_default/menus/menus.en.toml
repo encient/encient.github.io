@@ -30,7 +30,7 @@
 
 [[main]]
   name = "CTF Writeup"
-  url = "/docs/ctf-cheatsheet/forensics"
+  url = "/docs/ctf-2023/aboh-2023/about/"
 # url = "/docs/1.0/prologue/introduction/"
   weight = 10
 

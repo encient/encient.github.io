@@ -21,7 +21,7 @@ seo:
 - CTF Name: ASEAN Battle of Hackers (ABOH) 2023 
 - Organizer: Forensics and Security Research Centre - Student Section (FSEC-SS), Asia Pacific University (APU)
 
-|Category|Difficulty|Challenge Name|
-|--------|----------|--------------|
-|Forensics|Easy|[Fur Elise](/docs/ctf-2023/aboh-2023/fur-elise/)|
-|Forensics|Medium|[SCP 2.0](/docs/ctf-2023/aboh-2023/scp-2/)|
+|Category|Challenge Name|
+|--------|--------------|
+|Forensics|[Fur Elise](/docs/ctf-2023/aboh-2023/fur-elise/)|
+|Forensics|[SCP 2.0](/docs/ctf-2023/aboh-2023/scp-2/)|

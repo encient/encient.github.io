@@ -26,7 +26,7 @@ Beethoven was really pretty lol (read the section Beethoven Fur Elise: Fun facts
 Attachment: `heartbroken`
 
 ## Solution
-![file](fur1.png)
+![file](fur1.png) <br />
 The file is given without any extension. I use `file` command to identify the file type. However, there is nothing useful about the file type. Therefore, I open the file in a text editor to see the contents of the file.
 
 ![](fur2.png)
