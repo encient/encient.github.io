@@ -1,15 +1,15 @@
 ---
-title: "CTF 2024"
+title: "Wicked 6"
 description: ""
 summary: ""
-date: 2023-12-30T20:24:06+08:00
-lastmod: 2023-12-30T20:24:06+08:00
+date: 2024-04-04T16:59:19+08:00
+lastmod: 2024-04-04T16:59:19+08:00
 draft: false
 menu:
   docs:
     parent: ""
-    identifier: "ctf-2024-e18acbbe97d80b4cc1880ca1c06e6c1c"
-weight: 20
+    identifier: "wicked-6-39c9f0a04c4ee22ff9970a3494bf022e"
+weight: 900
 toc: true
 seo:
   title: "" # custom title (optional)

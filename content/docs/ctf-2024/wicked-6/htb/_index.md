@@ -1,15 +1,15 @@
 ---
-title: "CTF 2024"
+title: "Htb"
 description: ""
 summary: ""
-date: 2023-12-30T20:24:06+08:00
-lastmod: 2023-12-30T20:24:06+08:00
+date: 2024-04-04T12:41:59+08:00
+lastmod: 2024-04-04T12:41:59+08:00
 draft: false
 menu:
   docs:
-    parent: ""
-    identifier: "ctf-2024-e18acbbe97d80b4cc1880ca1c06e6c1c"
-weight: 20
+    parent: "wicked-6"
+    identifier: "htb-6dcf3c6de32905c489c5109caca0f7e7"
+weight: 200
 toc: true
 seo:
   title: "" # custom title (optional)
