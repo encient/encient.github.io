@@ -23,6 +23,5 @@ seo:
 |Category|Challenge Name|
 |--------|--------------|
 |Forensics|[Cash Me Ousside](/docs/ctf-2024/wicked-6/htb/cash-me-ousside/)|
-|Forensics (Unsolved)|[The Empire Is At Risk](/docs/ctf-2024/wicked-6/htb/the-empire-is-at-risk/)|
 |Reverse Engineering|[Almanac](/docs/ctf-2024/wicked-6/htb/almanac/)|
 |Reverse Engineering|[Number Cruncher](/docs/ctf-2024/wicked-6/htb/number-cruncher/)|

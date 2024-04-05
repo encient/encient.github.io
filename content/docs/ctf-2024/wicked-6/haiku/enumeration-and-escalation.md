@@ -121,4 +121,5 @@ Lastly, we can use `find` command to search recursively from root `/` directory 
 
 > 💡 `2>/dev/null` is used to disregard any error messages so that those error messages will not flood our screen which might make it harder to find the successful result.
 <br>   
+
 Answer: `292416966271042510263`
