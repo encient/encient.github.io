@@ -21,7 +21,7 @@ seo:
 - Organizer: Universiti Kuala Lumpur (UniKL MIIT) & Nexagate
 - Description: It is a beginner-friendly CTF competition.
 
-|Category|Difficulty|Challenge Name|
-|--------|----------|--------------|
+|Category|Challenge Name|
+|--------|--------------|
 |Forensics|[The Realm of Eerie-Area](/docs/ctf-2023/goh-2023/the-realm-of-eerie-area/)|
 |Forensics|[Clone](/docs/ctf-2023/goh-2023/clone/)|

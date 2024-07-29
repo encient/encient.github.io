@@ -1,15 +1,15 @@
 ---
-title: "CTF Cheatsheet"
+title: "iHack 2024"
 description: ""
 summary: ""
-date: 2023-09-07T16:06:50+02:00
-lastmod: 2023-09-07T16:06:50+02:00
-draft: true
+date: 2024-07-29T11:27:26+08:00
+lastmod: 2024-07-29T11:27:26+08:00
+draft: false
 menu:
   docs:
     parent: ""
-    identifier: "guides-4e0d0e0f89f7decc11eaad4ae9193018"
-weight: 999
+    identifier: "ihack-2024-5588f00854752e1d4dd0c827b9e96a55"
+weight: 910
 toc: true
 seo:
   title: "" # custom title (optional)
