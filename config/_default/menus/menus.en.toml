@@ -62,11 +62,11 @@
   url = "https://www.linkedin.com/in/jiaqiyeo/"
   weight = 10
 
-[[social]]
-  name = "X"
-  pre = '<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-x" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M4 4l11.733 16H20L8.267 4z"></path><path d="M4 20l6.768-6.768m2.46-2.46L20 4"></path></svg>'
-  url = "https://twitter.com/encient__"
-  weight = 20
+# [[social]]
+#   name = "X"
+#   pre = '<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-x" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M4 4l11.733 16H20L8.267 4z"></path><path d="M4 20l6.768-6.768m2.46-2.46L20 4"></path></svg>'
+#   url = "https://twitter.com/encient__"
+#   weight = 20
 
 [[social]]
   name = "GitHub"
@@ -76,7 +76,7 @@
   weight = 30
 
 [[footer]]
-  name = "Copyright © 2024 Encient"
+  name = "Copyright © 2025 Encient"
   # url = "/privacy/"
   weight = 10
 
