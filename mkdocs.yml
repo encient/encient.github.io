@@ -63,11 +63,11 @@ extra:
       link: https://github.com/encient
 
 nav:
-  - About Me:
-    - Achievements: about/achievements.md
-    - Activities: about/activities.md
-    - Certifications: about/certifications.md
-    - Contact: about/contact.md
+  #- About Me:
+  #  - Achievements: about/achievements.md
+  #  - Activities: about/activities.md
+  #  - Certifications: about/certifications.md
+  #  - Contact: about/contact.md
   - Cybersecurity Cheatsheets (In Progress):
     - DFIR:
       - Detecting Active Directory Attacks Using Splunk (In Progress): cheatsheets/dfir/detect-ad-attacks.md
