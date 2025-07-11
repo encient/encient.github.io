@@ -1,0 +1,146 @@
+site_name: Encient
+site_url: https://encient.github.io
+theme:
+  name: material
+  icon:
+    logo: octicons/book-16
+  favicon: assets/favicon.ico
+  features:
+    - content.code.annotate
+    - content.code.copy
+    - content.tabs.link
+    - header.autohide
+    - announce.dismiss
+    - navigation.footer
+    - navigation.indexes
+    - navigation.sections
+    - navigation.tabs
+    - navigation.top
+    - navigation.tracking
+    - search.highlight
+    - search.share
+    - search.suggest
+
+  palette:
+    # Dark mode
+    - scheme: slate
+      primary: black
+      toggle:
+        icon: material/weather-night
+        name: Switch to light mode
+
+    # Light mode
+    - scheme: default
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to dark mode
+
+plugins:
+  - search
+  - blog:
+      blog_dir: blog
+      blog_toc: true
+      post_date_format: medium
+
+markdown_extensions:
+  - attr_list
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.blocks.caption
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - toc:
+      permalink: true
+
+extra:
+  generator: false
+  social:
+    - icon: fontawesome/brands/linkedin
+      link: https://linkedin.com/in/jqyeo
+    - icon: fontawesome/brands/github
+      link: https://github.com/encient
+
+nav:
+  - About Me:
+    - Achievements: about/achievements.md
+    - Activities: about/activities.md
+    - Certifications: about/certifications.md
+    - Contact: about/contact.md
+  - Cybersecurity Cheatsheets (In Progress):
+    - DFIR:
+      - Detecting Active Directory Attacks Using Splunk (In Progress): cheatsheets/dfir/detect-ad-attacks.md
+  - CTF Writeups:
+    - 2023:
+      - ABOH 2023:
+        - "[ About ]": ctf/2023/aboh-2023/about.md
+        - Fur Elise: ctf/2023/aboh-2023/fur-elise.md
+        - SCP 2.0: ctf/2023/aboh-2023/scp-2.md
+      - GOH 2023:
+        - "[ About ]": ctf/2023/goh-2023/about.md
+        - Clone: ctf/2023/goh-2023/clone.md
+        - The Realm of Eerie-Area: ctf/2023/goh-2023/realm.md
+      - GCTF 2023:
+        - "[ About ]": ctf/2023/gctf-2023/about.md
+        - RSA: ctf/2023/gctf-2023/rsa.md
+        - Broken: ctf/2023/gctf-2023/broken.md
+        - Wireshark 1: ctf/2023/gctf-2023/wireshark-1.md
+        - Wireshark 2: ctf/2023/gctf-2023/wireshark-2.md
+        - History: ctf/2023/gctf-2023/history.md
+        - KB: ctf/2023/gctf-2023/kb.md
+        - Frequency: ctf/2023/gctf-2023/frequency.md
+        - Office: ctf/2023/gctf-2023/office.md
+        - Master Hidden Within the Slides: ctf/2023/gctf-2023/master-hidden-within-the-slides.md
+        - PNG: ctf/2023/gctf-2023/png.md
+    - 2024:
+      - Wicked 6:
+        - Haiku:
+          - Enumeration and Escalation: ctf/2024/wicked-6/haiku/enumeration-and-escalation.md
+        - HTB:
+          - "[ About ]": ctf/2024/wicked-6/htb/about.md
+          - Cash Me Ousside: ctf/2024/wicked-6/htb/cash-me-ousside.md
+          - Almanac: ctf/2024/wicked-6/htb/almanac.md
+          - Number Cruncher: ctf/2024/wicked-6/htb/number-cruncher.md
+      - iHack 2024:
+        - "[ About ]": ctf/2024/ihack-2024/about.md
+        - Covert: ctf/2024/ihack-2024/covert.md
+        - Memory: ctf/2024/ihack-2024/memory.md
+        - Mystery File: ctf/2024/ihack-2024/mystery-file.md
+      - GCTF 2024:
+        - "[ About ]": ctf/2024/gctf-2024/about.md
+        - Blockchain:
+          - Allowance: ctf/2024/gctf-2024/blockchain/allowance.md
+        - Cryptography:
+          - Warmup Salsa Sauce: ctf/2024/gctf-2024/crypto/warmup-salsa-sauce.md
+          - Warmup Cipher: ctf/2024/gctf-2024/crypto/warmup-cipher.md
+          - Overflow Resources: ctf/2024/gctf-2024/crypto/overflow-resources.md
+        - Forensics:
+          - QNA: ctf/2024/gctf-2024/forensics/qna.md
+          - Fox Secrets: ctf/2024/gctf-2024/forensics/fox-secrets.md
+          - Olivia's Boxter: ctf/2024/gctf-2024/forensics/olivias-boxter.md
+          - Stop Slacking Off: ctf/2024/gctf-2024/forensics/stop-slacking-off.md
+          - MFTBasics: ctf/2024/gctf-2024/forensics/mftbasics.md
+        - Misc:
+          - I Forgot: ctf/2024/gctf-2024/misc/i-forgot.md
+          - Find Me 1: ctf/2024/gctf-2024/misc/find-me-1.md
+          - Find Me 2: ctf/2024/gctf-2024/misc/find-me-2.md
+          - DevOps 101: ctf/2024/gctf-2024/misc/devops-101.md
+          - Dev(Sec?)Ops: ctf/2024/gctf-2024/misc/devsecops.md
+        - RE:
+          - Phone Siapa Ni?: ctf/2024/gctf-2024/re/phone-siapa-ni.md
+          - Gopher-chan: ctf/2024/gctf-2024/re/gopher-chan.md
+        - Web:
+          - Rainbow I: ctf/2024/gctf-2024/web/rainbow-i.md
+          - Rainbow II: ctf/2024/gctf-2024/web/rainbow-ii.md
+        - Pwn:
+          - Ret2Win I: ctf/2024/gctf-2024/pwn/ret2win.md
+  - HTB Sherlocks (In Progress):
+    - Easy: 
+      - Easy1: sherlocks/easy1.md
+    - Medium:
+      - Medium1: sherlocks/medium1.md
+    - Hard:
+      - Hard1: sherlocks/hard1.md
+  - Blog:
+    - blog/index.md
