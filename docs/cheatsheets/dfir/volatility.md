@@ -1,5 +1,3 @@
-icon:material/memory
-
 This is a cheatsheet mainly for analyzing Windows memory using Volatility 2 and Volatility 3.
 
 ??? info "List of All Plugins Available"
@@ -201,7 +199,6 @@ This is a cheatsheet mainly for analyzing Windows memory using Volatility 2 and 
 
 
 ## System Information
----
 ### Identify image information / profile
 === "Volatility 2"
     ``` 
@@ -214,7 +211,6 @@ This is a cheatsheet mainly for analyzing Windows memory using Volatility 2 and 
     ```
 
 ## Process Information
----
 ### List running processes
 === "Volatility 2"
     ``` 
@@ -231,7 +227,7 @@ This is a cheatsheet mainly for analyzing Windows memory using Volatility 2 and 
     ```
 
 ### Identify file handles
-This reveals the resources and objects a process is interacting with
+This reveals the resources and objects a process is interacting with.
 === "Volatility 2"
     ```
     vol.py -f /path/to/image --profile=<profile> handles -p <pid> --object-type=Key
@@ -256,7 +252,6 @@ This reveals the resources and objects a process is interacting with
     ```
 
 ## Network Information
----
 ### Identify network artifacts
 === "Volatility 2"
     ``` 
@@ -271,7 +266,6 @@ This reveals the resources and objects a process is interacting with
     ```
 
 ## File Information
----
 ### List files
 === "Volatility 2"
     ``` 
@@ -299,7 +293,6 @@ This reveals the resources and objects a process is interacting with
     ```
 
 ## Registry Information
----
 ### List registry hives
 === "Volatility 2"
     ``` 
@@ -329,7 +322,6 @@ This reveals the resources and objects a process is interacting with
     ```
 
 ## User Activity
----
 ### List executed commands
 === "Volatility 2"
     ``` 
@@ -355,7 +347,6 @@ This reveals the resources and objects a process is interacting with
     ```
 
 ## Miscellaneous
----
 ### Identify injected code
 === "Volatility 2"
     ``` 
@@ -401,7 +392,6 @@ This reveals the resources and objects a process is interacting with
     ```
 
 ## Strings
----
 ### Find IPv4 addresses
 ```
 strings /path/to/image | grep -E "\b([0-9]{1,3}\.){3}[0-9]{1,3}\b"

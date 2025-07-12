@@ -70,10 +70,12 @@ nav:
   #  - Activities: about/activities.md
   #  - Certifications: about/certifications.md
   #  - Contact: about/contact.md
-  - Cybersecurity Cheatsheets (In Progress):
+  - Cybersecurity Cheatsheets:
     - DFIR:
-      - Detecting Active Directory Attacks Using Splunk (In Progress): cheatsheets/dfir/detect-ad-attacks.md
-      - Volatility 2 & 3 Cheatsheet: cheatsheets/dfir/volatility.md
+      - 🔍 Detecting Active Directory Attacks Using Splunk (in progress):
+        - Detecting Common User/Domain Recon: cheatsheets/dfir/detect-ad-attacks/recon.md
+        - Detecting Password Spraying: cheatsheets/dfir/detect-ad-attacks/pass-spray.md
+      - 🔍 Volatility 2 & 3 Cheatsheet: cheatsheets/dfir/volatility.md
   - CTF Writeups:
     - 2023:
       - ABOH 2023:
