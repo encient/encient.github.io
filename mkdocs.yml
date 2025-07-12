@@ -48,6 +48,8 @@ markdown_extensions:
   - pymdownx.details
   - pymdownx.superfences
   - pymdownx.blocks.caption
+  - pymdownx.tabbed:
+      alternate_style: true
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
@@ -71,6 +73,7 @@ nav:
   - Cybersecurity Cheatsheets (In Progress):
     - DFIR:
       - Detecting Active Directory Attacks Using Splunk (In Progress): cheatsheets/dfir/detect-ad-attacks.md
+      - Volatility 2 & 3 Cheatsheet: cheatsheets/dfir/volatility.md
   - CTF Writeups:
     - 2023:
       - ABOH 2023:

@@ -1,4 +1,4 @@
-icon:material/car-arrow-right
+icon:material/server
 
 ## In progress
 In progress
