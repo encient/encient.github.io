@@ -72,9 +72,17 @@ nav:
   #  - Contact: about/contact.md
   - Cybersecurity Cheatsheets:
     - DFIR:
-      - 🔍 Detecting Active Directory Attacks Using Splunk (in progress):
+      - 🔍 Detecting Active Directory Attacks Using Splunk:
         - Detecting Common User/Domain Recon: cheatsheets/dfir/detect-ad-attacks/recon.md
         - Detecting Password Spraying: cheatsheets/dfir/detect-ad-attacks/pass-spray.md
+        - Detecting Responder-like Attacks: cheatsheets/dfir/detect-ad-attacks/responder.md
+        - Detecting Kerberoasting/AS-REProasting: cheatsheets/dfir/detect-ad-attacks/roasting.md
+        - Detecting Pass-the-Hash: cheatsheets/dfir/detect-ad-attacks/pass-the-hash.md
+        - Detecting Pass-the-Ticket: cheatsheets/dfir/detect-ad-attacks/pass-the-ticket.md
+        - Detecting Overpass-the-Hash/Pass-the-Key: cheatsheets/dfir/detect-ad-attacks/pass-the-key.md
+        - Detecting Golden Tickets and Silver Tickets: cheatsheets/dfir/detect-ad-attacks/golden-silver-ticket.md
+        - Detecting Unconstrained Delegation and Constrained Delegation Attacks: cheatsheets/dfir/detect-ad-attacks/delegation.md
+        - Detecting DCSync and DCShadow Attacks: cheatsheets/dfir/detect-ad-attacks/dcsync-dcshadow.md
       - 🔍 Volatility 2 & 3 Cheatsheet: cheatsheets/dfir/volatility.md
   - CTF Writeups:
     - 2023:
