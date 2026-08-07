@@ -72,7 +72,7 @@ nav:
   #  - Contact: about/contact.md
   - Cybersecurity Cheatsheets:
     - DFIR:
-      - 🔍 Detecting Active Directory Attacks Using Splunk:
+      - 🔍 Detect AD Attacks with Splunk:
         - Detecting Common User/Domain Recon: cheatsheets/dfir/detect-ad-attacks/recon.md
         - Detecting Password Spraying: cheatsheets/dfir/detect-ad-attacks/pass-spray.md
         - Detecting Responder-like Attacks: cheatsheets/dfir/detect-ad-attacks/responder.md
@@ -83,7 +83,8 @@ nav:
         - Detecting Golden Tickets and Silver Tickets: cheatsheets/dfir/detect-ad-attacks/golden-silver-ticket.md
         - Detecting Unconstrained Delegation and Constrained Delegation Attacks: cheatsheets/dfir/detect-ad-attacks/delegation.md
         - Detecting DCSync and DCShadow Attacks: cheatsheets/dfir/detect-ad-attacks/dcsync-dcshadow.md
-      - 🔍 Volatility 2 & 3 Cheatsheet: cheatsheets/dfir/volatility.md
+      - 🔍 Volatility 2 & 3 Commands: cheatsheets/dfir/volatility.md
+      - 🔍 Windows DFIR Analysis: cheatsheets/dfir/windows-dfir.md
   - CTF Writeups:
     - 2023:
       - ABOH 2023:
@@ -148,12 +149,5 @@ nav:
           - Rainbow II: ctf/2024/gctf-2024/web/rainbow-ii.md
         - Pwn:
           - Ret2Win I: ctf/2024/gctf-2024/pwn/ret2win.md
-  - HTB Sherlocks (In Progress):
-    - Easy: 
-      - Easy1: sherlocks/easy1.md
-    - Medium:
-      - Medium1: sherlocks/medium1.md
-    - Hard:
-      - Hard1: sherlocks/hard1.md
   - Blog:
     - blog/index.md
